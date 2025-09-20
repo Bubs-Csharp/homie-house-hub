@@ -8,6 +8,7 @@ import Navigation from "@/components/Navigation";
 import Dashboard from "@/components/Dashboard";
 import ExpenseTracker from "@/components/ExpenseTracker";
 import ChatHub from "@/components/ChatHub";
+import ChoreRotation from "@/components/ChoreRotation";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,7 +25,7 @@ const App = () => {
       case 'chat':
         return <ChatHub />;
       case 'house':
-        return <Dashboard />; // Placeholder for now
+        return <ChoreRotation />;
       case 'settings':
         return <Dashboard />; // Placeholder for now
       default:
